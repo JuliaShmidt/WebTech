@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #16a085">
     <div class="container">
-      <nuxt-link to="/" class="navbar-brand">Наркошоп</nuxt-link>
+      <nuxt-link to="/" class="navbar-brand">JSHOP</nuxt-link>
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
           <nuxt-link to="/" class="nav-link">Главная страница</nuxt-link>
