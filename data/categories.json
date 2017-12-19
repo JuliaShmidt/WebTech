@@ -1,0 +1,14 @@
+{
+  "big": {
+    "name": "Большие слаймы",
+    "alias": "big"
+  },
+  "medium": {
+    "name": "Средние слаймы",
+    "alias": "medium"
+  },
+  "small": {
+    "name": "Маленькие слаймы",
+    "alias": "small"
+  }
+}

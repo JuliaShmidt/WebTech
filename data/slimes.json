@@ -1,0 +1,26 @@
+{
+  "volshebnyy-izumrudnyy-slaym-big": {
+    "name": "Волшебный изумрудный слайм",
+    "category": "big",
+    "color": "green",
+    "image": "http://mkuksa.ru/image/cache/catalog/demo/cat/1-000/1-0034-500x500.jpg",
+    "amount": 350,
+    "alias": "volshebnyy-izumrudnyy-slaym-big"
+  },
+  "volshebnyy-izumrudnyy-slaym-medium": {
+    "name": "Волшебный изумрудный слайм",
+    "category": "medium",
+    "color": "green",
+    "image": "http://mkuksa.ru/image/cache/catalog/demo/cat/1-000/1-0034-500x500.jpg",
+    "amount": 250,
+    "alias": "volshebnyy-izumrudnyy-slaym-medium"
+  },
+  "volshebnyy-izumrudnyy-slaym-small": {
+    "name": "Волшебный изумрудный слайм",
+    "category": "small",
+    "color": "green",
+    "image": "http://mkuksa.ru/image/cache/catalog/demo/cat/1-000/1-0034-500x500.jpg",
+    "amount": 150,
+    "alias": "volshebnyy-izumrudnyy-slaym-small"
+  }
+}
