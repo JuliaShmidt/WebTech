@@ -1,16 +1,15 @@
 <template>
   <div class="page">
-    <h1 class="card-title">{{ slime.name }}</h1>
+    <h1 class="card-title">{{ slime.title }}</h1>
     <div class="card">
       <div class="card-body">
         <div class="row">
           <div class="col-sm">
-            <img :src="slime.image" :alt="slime.name">
+            <img :src="slime.image" :alt="slime.title">
           </div>
           <div class="col-sm">
             <p>Цвет: {{ slime.color }}</p>
-            <p>Категория: {{ categories[slime.category].name }}</p>
-            <p>Цена: {{ slime.amount }}</p>
+            <p>Цена: {{ slime.price }}</p>
             <button class="btn btn-primary" @click="add(slime)">Добавить в корзину</button>
           </div>
         </div>
@@ -19,15 +18,13 @@
   </div>
 </template>
 <script>
-  import slimes from '../../data/slimes.json'
-  import categories from '../../data/categories.json'
   import {mapMutations} from 'vuex'
 
   export default {
-    asyncData ({params}) {
+    async asyncData ({app, params}) {
+      const {data} = await app.$axios.get('slimes/get/' + params.slime)
       return {
-        slime: slimes[params.slime],
-        categories
+        slime: data.slime
       }
     },
     methods: {

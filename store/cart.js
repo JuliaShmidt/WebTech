@@ -6,8 +6,8 @@ export const mutations = {
   addItem (state, item) {
     state.items.push(item)
   },
-  removeItem (state, item) {
-    state.items.slice(item, 1)
+  removeItem (state, i) {
+    state.items.splice(i, 1)
   }
 }
 

@@ -17,6 +17,15 @@ module.exports = {
   css: [
     {src: '@/assets/app.scss', lang: 'scss'}
   ],
+  modules: [
+    '@nuxtjs/axios'
+  ],
+  axios: {
+    baseURL: `http://${process.env.HOST || 'localhost'}:${process.env.PORT || 3000}/api`,
+    init (axios, ctx) {
+      axios.defaults.ContentType = 'application/json'
+    }
+  },
   /*
   ** Customize the progress bar color
   */
